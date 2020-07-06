@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yuxingguo/Desktop/ds/LinearList/LinkedList/SingleLinkedList.h
+iostream
+-
+
+/Users/yuxingguo/Desktop/ds/LinearList/LinkedList/main.cpp
+SingleLinkedList.h
+/Users/yuxingguo/Desktop/ds/LinearList/LinkedList/SingleLinkedList.h
+
