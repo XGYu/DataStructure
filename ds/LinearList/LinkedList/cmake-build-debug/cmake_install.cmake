@@ -1,4 +1,4 @@
-# Install script for directory: /Users/yuxingguo/Desktop/ds/LinearList/LinkedList
+# Install script for directory: /Users/yuxingguo/Desktop/datastructure/ds/LinearList/LinkedList
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/yuxingguo/Desktop/ds/LinearList/LinkedList/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/yuxingguo/Desktop/datastructure/ds/LinearList/LinkedList/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/yuxingguo/Desktop/ds/LinearList/LinkedList/SingleLinkedList.h
+/Users/yuxingguo/Desktop/datastructure/ds/LinearList/LinkedList/DoubleLinkedList.h
 iostream
 -
 
-/Users/yuxingguo/Desktop/ds/LinearList/LinkedList/main.cpp
+/Users/yuxingguo/Desktop/datastructure/ds/LinearList/LinkedList/SingleLinkedList.h
+iostream
+-
+
+/Users/yuxingguo/Desktop/datastructure/ds/LinearList/LinkedList/main.cpp
 SingleLinkedList.h
-/Users/yuxingguo/Desktop/ds/LinearList/LinkedList/SingleLinkedList.h
+/Users/yuxingguo/Desktop/datastructure/ds/LinearList/LinkedList/SingleLinkedList.h
+DoubleLinkedList.h
+/Users/yuxingguo/Desktop/datastructure/ds/LinearList/LinkedList/DoubleLinkedList.h
 

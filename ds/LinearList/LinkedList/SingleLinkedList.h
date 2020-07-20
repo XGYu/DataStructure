@@ -180,4 +180,75 @@ bool DeleteNode(LNode *p) {
     return true;
 }
 
+
+//TODO 习题2 删除单链表中所有值为x的结点并释放空间
+void DelX(LinkedList &L, int x) {
+    LNode *pre = L, *p = L->next, *q;
+    while(p != nullptr) {
+        if(p->data == x) {  //删掉结点
+            q = p;
+            p = p->next;
+            pre->next = p;
+            free(q);
+        }
+        else {      //向前推进
+            pre = p;
+            p = p->next;
+        }
+    }
+}
+
+//TODO 习题3 使用递归反向输出链表
+void ReversePrint_1(LinkedList L) {
+    if(L->next!= nullptr) {
+        ReversePrint_1(L->next);
+    }
+    if(L != nullptr && L->data != 0)
+        cout << L->data << " ";
+}
+//TODO 习题3 使用链表逆置反向输出链表
+//这个方法会改变链表的指向，如果不希望改变链表，则不要使用这个方法
+void ReversePrint_2(LinkedList L) {
+    ListReverse(L);
+    PrintList(L);
+}
+
+//习题8 计算链表长度
+int ListLen(LinkedList L) {
+    int len = 0;
+    while(L->next != nullptr) {
+        len ++;
+        L = L->next;
+    }
+    return len;
+}
+
+//TODO 习题8 寻找两个单链表的公共部分
+//连个单链表若有公共部分，则其拓扑结构应该为Y型
+//分别计算两个单链表的长度，从短链表的长度处同时遍历，直到遇到第一个公共结点，后面均为公共结点
+void FindCommonList(LinkedList L1, LinkedList L2) {
+    int len1 = ListLen(L1), len2 = ListLen(L2), dis = len1>len2?len1-len2:len2-len1;
+    LinkedList longList, shortList;
+    if(len1 > len2) {
+        longList = L1;
+        shortList = L2;
+    }
+    else {
+        longList = L2;
+        shortList = L1;
+    }
+    while(dis--)
+        longList = longList->next;
+    while(longList != nullptr) {
+        if(longList == shortList) {
+            PrintList(longList);
+            return;
+        }
+        else {  //同时向下一结点推进
+            longList = longList->next;
+            shortList = shortList->next;
+        }
+    }
+}
+
 #endif //LINKEDLIST_SINGLELINKEDLIST_H

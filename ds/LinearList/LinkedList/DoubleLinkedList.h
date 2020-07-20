@@ -35,6 +35,19 @@ void PrintDList(DLinkedList L) {
     printf("%d\n", p->data);
 }
 
+//双链表的插入
+//在p结点后面插入新结点s
+bool InsertNextDNode(DNode *p, DNode *s) {
+    if(p == nullptr || s == nullptr)
+        return false;
+    s->next = p->next;
+    //如果p是双链表最后一个结点，p->next->prior会出现问题
+    if(p->next != nullptr)
+        p->next->prior = s;
+    p->next = s;
+    s->prior = p;
+    return true;
+}
 
 
 #endif //LINKEDLIST_DOUBLELINKEDLIST_H
