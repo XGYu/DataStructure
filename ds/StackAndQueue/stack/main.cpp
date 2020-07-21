@@ -22,6 +22,28 @@ bool StackEmpty(Stack S) {
 }
 
 //TODO 栈的增删改查操作
+bool Push(Stack &S, int x) {
+    if(S.top == MaxSize-1)
+        return false;
+
+    S.data[++S.top] = x;
+    return true;
+}
+
+bool Pop(Stack &S, int &e) {
+    if(S.top == -1)
+        return false;
+    e = S.data[S.top--];
+    return true;
+}
+
+bool GetTop(Stack S, int &e) {
+    if(S.top == -1)
+        return false;
+    e = S.data[S.top];
+    return true;
+}
+
 
 
 int main() {
