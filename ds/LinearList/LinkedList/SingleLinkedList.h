@@ -24,6 +24,17 @@ bool InitList(LinkedList &L) {
     return true;
 }
 
+//单链表的长度
+int ListLength(LinkedList L) {
+    L = L->next;
+    int len = 0;
+    while(L != nullptr) {
+        len ++;
+        L = L->next;
+    }
+    return len;
+}
+
 //使用尾插法建立一个新的链表
 LinkedList ListTailInsert(LinkedList &L) {
     int e;
@@ -76,6 +87,7 @@ void ListReverse(LinkedList &L) {
 
 //打印链表
 void PrintList(LinkedList L) {
+    cout << "ListLength: " << ListLength(L) << endl;
     L = L->next;
     while(L->next != nullptr) {
         printf("%d->",L->data);
@@ -250,5 +262,26 @@ void FindCommonList(LinkedList L1, LinkedList L2) {
         }
     }
 }
+
+//TODO P71 习题4 判断单链表的数据是否中心对称
+//思路：把链表的前一半元素放进栈中，然后一边弹栈一边与链表的后半部分比较
+bool isSym(LinkedList L, int n) {
+    int arr[n/2];
+    int i;
+    LNode *p = L->next;
+    for(i = 0; i < n/2; i++) {
+        arr[i] = p->data;       //进栈
+        p = p->next;
+    }
+    i --;   //循环终止时多加了一次
+    if(n % 2)   p = p->next;    //如果链表的长度是奇数个，则跳过中间的元素
+    while(p!=nullptr && arr[i]==p->data) {
+        i --;
+        p = p->next;
+    }
+    if(i == -1) return true;    //栈中的所有元素都弹出来了
+    else    return false;
+}
+
 
 #endif //LINKEDLIST_SINGLELINKEDLIST_H

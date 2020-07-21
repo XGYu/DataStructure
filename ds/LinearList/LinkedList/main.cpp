@@ -2,12 +2,15 @@
 #include "DoubleLinkedList.h"
 
 int main() {
+    while(true) {
+        LinkedList L;
+        InitList(L);
+        ListTailInsert(L);
+        PrintList(L);
+        if(isSym(L, ListLength(L)))     cout << "中心对称." << endl;
+        else    cout << "不对称." << endl;
+    }
 
-    LinkedList L;
-    InitList(L);
-    ListTailInsert(L);
-    PrintList(L);
-    FindCommonList(L, L);
 
 
 /*
