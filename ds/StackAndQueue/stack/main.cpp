@@ -65,9 +65,44 @@ bool isLegalIOStack(char arr[]) {
     return true;
 }
 
+//TODO 栈的应用：括号匹配
+//1:[ 2:[ 3:{ 4:) 5:] 6:}
+bool IsParMatch(int *arr) {
+    int i = 0;
+    Stack S;
+    InitStack(S);
+    while(arr[i] != '\0') {
+        if(arr[i] == 1 || arr[i] == 2 || arr[i] == 3) {
+            Push(S, arr[i]);
+        } else {
+            if (StackEmpty(S))
+                return false;
+
+            int topPar;
+            Pop(S, topPar);
+            if (arr[i] == 1 && topPar != 4)
+                return false;
+            if (arr[i] == 2 && topPar != 5)
+                return false;
+            if (arr[i] == 3 && topPar != 6)
+                return false;
+        }
+
+        i ++;
+    }
+    return StackEmpty(S);
+}
+
+
 
 int main() {
 
+        int arr[] = {1, 2, 3, 3, 5, 4};
+
+        if(IsParMatch(arr))
+            cout << "括号匹配成功！" << endl;
+        else
+            cout << "括号匹配不成功！" << endl;
 
     return 0;
 }
