@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yuxingguo/Desktop/datastructure/ds/StackAndQueue/queue/SqQueue.h
+iostream
+-
+
+/Users/yuxingguo/Desktop/datastructure/ds/StackAndQueue/queue/main.cpp
+SqQueue.h
+/Users/yuxingguo/Desktop/datastructure/ds/StackAndQueue/queue/SqQueue.h
+

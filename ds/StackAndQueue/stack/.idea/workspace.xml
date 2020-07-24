@@ -11,10 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="392f0110-0f1e-48ce-ba96-550f62007bda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch3_3_test3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="392f0110-0f1e-48ce-ba96-550f62007bda" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,8 +75,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="589" />
-    <option name="y" value="41" />
+    <option name="x" value="878" />
+    <option name="y" value="79" />
     <option name="width" value="1203" />
     <option name="height" value="984" />
   </component>
@@ -147,12 +144,12 @@
       <workItem from="1595294687295" duration="3562000" />
       <workItem from="1595468205754" duration="7739000" />
       <workItem from="1595555396511" duration="307000" />
-      <workItem from="1595557898651" duration="1958000" />
+      <workItem from="1595557898651" duration="2172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14533000" />
+    <option name="totallyTimeSpent" value="14747000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -164,7 +161,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="663" y="41" width="1203" height="984" extended-state="0" />
+    <frame x="878" y="79" width="1203" height="984" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49906892" visible="true" weight="0.18604651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
