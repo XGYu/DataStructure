@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yuxingguo/Desktop/datastructure/ds/BitTree/bitree.h
+iostream
+-
+
+/Users/yuxingguo/Desktop/datastructure/ds/BitTree/main.cpp
+iostream
+-
+bitree.h
+/Users/yuxingguo/Desktop/datastructure/ds/BitTree/bitree.h
+
