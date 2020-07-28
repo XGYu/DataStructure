@@ -15,7 +15,7 @@ typedef struct BiNode {
     //如果在使用场景中需要大量遍历父节点，则可以加设*parent，但是考研中一般没有parent
 }BiNode, *BiTree;
 
-//链式队列结点，用于二叉树的层次遍历
+//链式队列结点，用于二叉树的层序遍历
 typedef struct LinkNode {
     BiNode *data;
     struct LinkNode *next;
@@ -27,7 +27,8 @@ typedef struct {
 
 void InitQueue(LinkQueue &Q) {
     //带头结点
-    Q.front = Q.rear = (LinkNode*)malloc(sizeof(LinkNode));
+    Q.front = (LinkNode*)malloc(sizeof(LinkNode));
+    Q.rear = Q.front;
     Q.front->next = nullptr;
 }
 
@@ -101,6 +102,7 @@ void LevelOrder(BiTree T) {
         if(p->lchild != nullptr)
             EnQueue(Q, p->lchild);
         cout << p->lchild << endl;
+        cout << sizeof(p->lchild) << endl;
         if(p->rchild != nullptr)
             EnQueue(Q, p->rchild);
     }

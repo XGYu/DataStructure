@@ -1,6 +1,5 @@
-#include <iostream>
 #include "bitree.h"
-
+#include "threadtree.h"
 
 int main() {
     BiTree T;
