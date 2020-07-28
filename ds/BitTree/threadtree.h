@@ -39,7 +39,7 @@ void InThread(ThreadTree T) {
     }
 }
 
-//完善对开头和结尾的一些处理
+//创建中序线索二叉树：完善对开头和结尾的处理
 void CreateInThread(ThreadTree T) {
     pre = nullptr;
     if(T != nullptr) {
@@ -49,7 +49,91 @@ void CreateInThread(ThreadTree T) {
     }
 }
 
+//先序遍历同时创建线索二叉树
+//TODO 只有先序线索二叉树要解决循环遍历的问题
+void PreThread(ThreadTree T) {
+    if(T != nullptr) {
+        visit(T);
+        if(T->ltag != 1)    //如果T->lchild为空，visit(T)会把T的左子树指向前驱结点，如果不加这个条件判断，可能会导致无限循环
+            PreThread(T->lchild);
+        PreThread(T->rchild);
+    }
+}
+
+//创建先序线索二叉树：完善对开头和结尾的处理
+void CreatePreThread(ThreadTree T) {
+    pre = nullptr;
+    if(T != nullptr) {
+        PreThread(T);
+        if(pre->rchild == nullptr)
+            pre->rtag = 1;
+    }
+}
+
+//后序遍历同时创建线索二叉树
+void PostThread(ThreadTree T) {
+    if(T != nullptr) {
+        PostThread(T->lchild);
+        PostThread(T->rchild);
+        visit(T);
+    }
+}
+
+//创建后序线索二叉树：完善对开头和结尾的处理
+void CreatePostOrder(ThreadTree T) {
+    pre = nullptr;
+    if(T != nullptr) {
+        PostThread(T);
+        if(pre->rchild == nullptr)
+            pre->rtag = 1;
+    }
+}
+
+//TODO 利用线索二叉树可以实现的应用：
+
+//TODO 1.通过中序线索二叉树进行非递归的中序遍历
+
+//找到以p为根节点的(子)树中第一个被访问的节点
+ThreadNode *FirstNode(ThreadNode *p) {
+    //这个循环相当于是找到了根节点的最前驱结点
+    while(p->ltag != 1)
+        p = p->lchild;
+    return p;
+}
+
+//找到p结点的直接后继结点，注意，p结点本身可能不包含任何前驱后继信息
+ThreadNode *NextNode(ThreadNode *p) {
+    if(p->rtag != 1)    return FirstNode(p->rchild);    //找到以p->rchild为根结点的子树的最前驱结点
+    else return p->rchild;
+}
+
+//中序遍历主函数
+void InOrder(ThreadTree T) {
+    for(ThreadNode *p = FirstNode(T); p != nullptr;p = NextNode(p))
+        cout << p->data << " "; //相当于是visit(p),但这个.h文件visit函数有其他用处
+}
 
 
+//TODO 2.通过中序线索二叉树进行逆向中序遍历
+
+//找到以p为根结点的(子)树中最后一个被访问的结点
+ThreadNode *LastNode(ThreadNode *p) {
+    //这个循环相当于是找到了根节点的最后继结点
+    while(p->rtag != 1)
+        p = p->rchild;
+    return p;
+}
+
+//找到p结点的直接前驱结点
+ThreadNode *PreNode(ThreadNode *p) {
+    if(p->ltag == 0) return LastNode(p->lchild);
+    else return p->lchild;
+}
+
+//逆向中序遍历主函数
+void ReverseInOrder(ThreadTree T) {
+    for(ThreadNode *p = LastNode(T);p != nullptr;p = PreNode(p))
+        cout << p->data << " ";
+}
 
 #endif //BITTREE_THREADTREE_H
