@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/BitTree.dir/main.cpp.o"
+  "BitTree.exe"
+  "BitTree.exe.manifest"
+  "BitTree.lib"
   "BitTree.pdb"
-  "BitTree"
+  "CMakeFiles/BitTree.dir/main.cpp.obj"
 )
 
 # Per-language clean rules from dependency scanning.

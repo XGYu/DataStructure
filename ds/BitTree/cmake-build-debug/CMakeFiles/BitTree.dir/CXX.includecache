@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/yuxingguo/Desktop/datastructure/ds/BitTree/bitree.h
+D:/ds/DataStructure/ds/BitTree/bitree.h
 iostream
 -
 
-/Users/yuxingguo/Desktop/datastructure/ds/BitTree/main.cpp
+D:/ds/DataStructure/ds/BitTree/main.cpp
+bitree.h
+D:/ds/DataStructure/ds/BitTree/bitree.h
+threadtree.h
+D:/ds/DataStructure/ds/BitTree/threadtree.h
+
+D:/ds/DataStructure/ds/BitTree/threadtree.h
 iostream
 -
-bitree.h
-/Users/yuxingguo/Desktop/datastructure/ds/BitTree/bitree.h
 

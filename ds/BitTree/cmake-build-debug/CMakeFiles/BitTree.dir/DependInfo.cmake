@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/yuxingguo/Desktop/datastructure/ds/BitTree/main.cpp" "/Users/yuxingguo/Desktop/datastructure/ds/BitTree/cmake-build-debug/CMakeFiles/BitTree.dir/main.cpp.o"
+  "D:/ds/DataStructure/ds/BitTree/main.cpp" "D:/ds/DataStructure/ds/BitTree/cmake-build-debug/CMakeFiles/BitTree.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
