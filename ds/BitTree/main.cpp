@@ -19,6 +19,6 @@ int main() {
     PostOrder(T);
     cout << endl;
     LevelOrder(T);
-    
+
     return 0;
 }
