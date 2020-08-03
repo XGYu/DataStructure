@@ -17,14 +17,30 @@ typedef struct BSTNode {
 //TODO 二叉排序树的非递归插入
 //TODO 最差空间复杂度O(1)
 bool BSTInsert(BSTree &T, int key) {
-    while(T != nullptr && key != T->key) {
-        if(key < T->key)    T = T->lchild;
-        else    T = T->rchild;
+    BSTree temp = T;
+    BSTree parent = T;
+    BSTNode *value = nullptr;
+    while(temp != nullptr && key != temp->key) {
+        if(key < temp->key) {
+            parent = temp;
+            temp = temp->lchild;
+        }
+
+        else {
+            parent = temp;
+            temp = temp->rchild;
+        }
     }
-    if(T == nullptr) {
-        T = (BSTNode *)malloc(sizeof(BSTNode));
-        T->key = key;
-        T->lchild = T->rchild = nullptr;
+    if(temp == nullptr) {
+        value = (BSTNode *)malloc(sizeof(BSTNode));
+        value->key = key;
+        value->lchild =value->rchild = nullptr;
+        if(key<parent->key)
+            parent->lchild = value;
+        else
+            parent->rchild = value;
+
+        cout << value->key << endl;
         return true;
     }
     return false;
@@ -53,7 +69,7 @@ bool BSTReverseInsert(BSTree &T, int key) {
 void CreateBST(BSTree &T, int arr[], int n) {
     T = nullptr;
     for(int i = 0; i < n; i ++) {
-        BSTReverseInsert(T, arr[i]);
+        BSTInsert(T, arr[i]);
     }
 }
 
