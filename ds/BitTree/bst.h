@@ -18,28 +18,28 @@ typedef struct BSTNode {
 //TODO 最差空间复杂度O(1)
 bool BSTInsert(BSTree &T, int key) {
     BSTree temp = T;
-    BSTree parent = T;
+    //BSTree parent = T;
     BSTNode *value = nullptr;
     while(temp != nullptr && key != temp->key) {
         if(key < temp->key) {
-            parent = temp;
+            //parent = temp;
             temp = temp->lchild;
         }
 
         else {
-            parent = temp;
+            //parent = temp;
             temp = temp->rchild;
         }
     }
     if(temp == nullptr) {
         value = (BSTNode *)malloc(sizeof(BSTNode));
         value->key = key;
-        value->lchild =value->rchild = nullptr;
-        if(key<parent->key)
-            parent->lchild = value;
-        else
-            parent->rchild = value;
-
+        value->lchild = value->rchild = nullptr;
+        //if(key < parent->key)
+        //    parent->lchild = value;
+        //else
+        //    parent->rchild = value;
+        temp = value;
         cout << value->key << endl;
         return true;
     }
