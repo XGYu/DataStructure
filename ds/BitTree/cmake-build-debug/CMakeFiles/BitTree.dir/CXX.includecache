@@ -10,11 +10,17 @@ D:/ds/DataStructure/ds/BitTree/bitree.h
 iostream
 -
 
+D:/ds/DataStructure/ds/BitTree/bst.h
+iostream
+-
+
 D:/ds/DataStructure/ds/BitTree/main.cpp
 bitree.h
 D:/ds/DataStructure/ds/BitTree/bitree.h
 threadtree.h
 D:/ds/DataStructure/ds/BitTree/threadtree.h
+bst.h
+D:/ds/DataStructure/ds/BitTree/bst.h
 
 D:/ds/DataStructure/ds/BitTree/threadtree.h
 iostream
