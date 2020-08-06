@@ -14,10 +14,7 @@
     <list default="true" id="139abcc4-9cf6-474e-8ba2-f253351436d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bst.h" beforeDir="false" afterPath="$PROJECT_DIR$/bst.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BitTree.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BitTree.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BitTree.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BitTree.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BitTree.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BitTree.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BitTree.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BitTree.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BitTree.dir/main.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BitTree.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BitTree.dir/vc140.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,11 +51,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -77,6 +69,9 @@
       <workItem from="1596334242526" duration="706000" />
       <workItem from="1596334959382" duration="3291000" />
       <workItem from="1596418064316" duration="4250000" />
+      <workItem from="1596430384792" duration="488000" />
+      <workItem from="1596431028333" duration="191000" />
+      <workItem from="1596705016523" duration="47000" />
     </task>
     <servers />
   </component>
@@ -84,10 +79,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1502" y="312" key="FileChooserDialogImpl" timestamp="1596160493857">
+    <state x="1502" y="312" key="FileChooserDialogImpl" timestamp="1596705057961">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1502" y="312" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1596160493857" />
+    <state x="1502" y="312" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1596705057961" />
     <state width="1340" height="368" key="GridCell.Tab.0.bottom" timestamp="1596430273184">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

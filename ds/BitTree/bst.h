@@ -17,7 +17,7 @@ typedef struct BSTNode {
 //TODO 二叉排序树的非递归插入
 //TODO 最差空间复杂度O(1)
 bool BSTInsert(BSTree &T, int key) {
-    BSTree temp = T;
+    BSTree temp =T;
     //BSTree parent = T;
     BSTNode *value = nullptr;
     while(temp != nullptr && key != temp->key) {
