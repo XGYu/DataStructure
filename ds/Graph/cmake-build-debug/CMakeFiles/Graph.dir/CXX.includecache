@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/ds/DataStructure/ds/Graph/DenseGraph.h
+iostream
+-
+vector
+-
+cassert
+-
+
+D:/ds/DataStructure/ds/Graph/SparseGraph.h
+iostream
+-
+vector
+-
+cassert
+-
+
+D:/ds/DataStructure/ds/Graph/main.cpp
+iostream
+-
+ctime
+-
+DenseGraph.h
+D:/ds/DataStructure/ds/Graph/DenseGraph.h
+SparseGraph.h
+D:/ds/DataStructure/ds/Graph/SparseGraph.h
+
