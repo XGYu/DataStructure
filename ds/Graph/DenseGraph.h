@@ -55,6 +55,14 @@ public:
         return g[v][w];
     }
 
+    void show() {
+        for(int i = 0; i < n; i ++) {
+            for(int j = 0; j < n; j ++)
+                cout << g[i][j] << "\t";
+            cout << endl;
+        }
+    }
+
     //TODO 邻边迭代器，传入一个图和一个顶点
     class adjIterator {
     private:

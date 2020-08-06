@@ -33,6 +33,9 @@ public:
 
     }
 
+    int V() { return n;}
+    int E() { return m;}
+
     void addEdge(int v, int w) {
         assert(v >= 0 && v < n);
         assert(w >= 0 && w < n);
@@ -53,6 +56,15 @@ public:
                 return true;
 
         return false;
+    }
+
+    void show() {
+        for(int i = 0; i < n; i++) {
+            cout << "vertex " << i << ":\t";
+            for(int j = 0;j < g[i].size(); j++)
+                cout << g[i][j] << "\t";
+            cout << endl;
+        }
     }
 
     class adjIterator {
