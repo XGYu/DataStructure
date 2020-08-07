@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+D:/ds/DataStructure/ds/Graph/Component.h
+iostream
+-
+cassert
+-
+
 D:/ds/DataStructure/ds/Graph/DenseGraph.h
 iostream
 -
@@ -45,4 +51,6 @@ SparseGraph.h
 D:/ds/DataStructure/ds/Graph/SparseGraph.h
 ReadGraph.h
 D:/ds/DataStructure/ds/Graph/ReadGraph.h
+Component.h
+D:/ds/DataStructure/ds/Graph/Component.h
 

@@ -27,6 +27,7 @@ public:
         stringstream ss(line);
         ss >> V >> E;
 
+
         assert(V == graph.V());
 
         for(int i = 0; i < E; i ++) {
